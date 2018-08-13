@@ -1,4 +1,4 @@
-FROM node:10.6.0-stretch
+FROM node:10.8.0-stretch
 
 # workdir
 RUN mkdir -p /app
