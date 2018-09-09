@@ -1,4 +1,4 @@
-FROM node:10.8.0-stretch
+FROM node:10.10.0-stretch
 
 # workdir
 RUN mkdir -p /app
@@ -15,4 +15,4 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get -qy update \
 # yarn
 # https://yarnpkg.com/en/docs/install#alternatives-stable
 #
-RUN curl -o- --location https://yarnpkg.com/install.sh | bash
+RUN curl -o- --silent --show-error --location https://yarnpkg.com/install.sh | bash
